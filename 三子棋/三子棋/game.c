@@ -6,7 +6,7 @@ void InitBoard(char board[ROW][COL], int row, int col)//≥ı ºªØ∆Â≈Ã
 	memset(board, ' ', row * col * sizeof(board[0][0]));
 }
 
-void DisplayBoard(char board[ROW][COL], int row, int col)
+void DisplayBoard(char board[ROW][COL], int row, int col)//¥Ú”°∆Â≈Ã
 {
 	//   |   |   
 	//---|---|---
@@ -82,7 +82,7 @@ void ComputerMove(char board[ROW][COL], int row, int col)
 	}
 }
 
-static int IsFull(char board[ROW][COL], int row, int col)
+static int IsFull(char board[ROW][COL], int row, int col)//≈–∂œ∆Â≈Ã «∑Òœ¬¬˙
 {
 	int i = 0;
 	int j = 0;
@@ -97,7 +97,7 @@ static int IsFull(char board[ROW][COL], int row, int col)
 	return 1;
 }
 
-char IsWin(char board[ROW][COL], int row, int col)
+char IsWin(char board[ROW][COL], int row, int col)//≈–∂œ ‰”Æ
 {
 	int i = 0;
 	for (i = 0; i < row; i++)
@@ -128,5 +128,5 @@ char IsWin(char board[ROW][COL], int row, int col)
 	{
 		return 'Q';
 	}
-	return 'C';
+	return 'C';//ºÃ–¯”Œœ∑
 }

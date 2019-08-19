@@ -5,8 +5,8 @@ void game()
 {
 	char board[ROW][COL];
 	char ret = 0;
-	InitBoard(board, ROW, COL);
-	DisplayBoard(board, ROW, COL);
+	InitBoard(board, ROW, COL);//≥ı ºªØ∆Â≈Ã
+	DisplayBoard(board, ROW, COL);//¥Ú”°∆Â≈Ã
 	while (1)
 	{
 		PlayerMove(board, ROW, COL);
@@ -18,7 +18,7 @@ void game()
 		}
 		ComputerMove(board, ROW, COL);
 		DisplayBoard(board, ROW, COL);
-		ret = IsWin(board, ROW, COL);
+		ret = IsWin(board, ROW, COL);//≈–∂œ ‰”Æ
 		if (ret != 'C')
 		{
 			break;
