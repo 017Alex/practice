@@ -5,8 +5,8 @@
 #include<stdlib.h>
 #include<time.h>
 
-#define ROW 3
-#define COL 3
+#define ROW 3//行数
+#define COL 3//列数
 
 void InitBoard(char board[ROW][COL], int row, int col);
 void DisplayBoard(char board[ROW][COL], int row, int col);

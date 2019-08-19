@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include"game.h"
 
-void InitBoard(char board[ROW][COL], int row, int col)
+void InitBoard(char board[ROW][COL], int row, int col)//≥ı ºªØ∆Â≈Ã
 {
 	memset(board, ' ', row * col * sizeof(board[0][0]));
 }

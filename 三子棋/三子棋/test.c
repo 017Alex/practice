@@ -24,7 +24,6 @@ void game()
 			break;
 		}
 	}
-	//
 	if (ret == '*')
 	{
 		printf("Íæ¼ÒÓ®\n");
