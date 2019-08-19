@@ -111,9 +111,113 @@
 
 
 
-reverse_string(char* string)
+//void reverse_string(char* string)
+//{
+//	if (*string == '\0') 
+//	{
+//		return 0;
+//	}
+//	reverse_string(string + 1);
+//	printf("%c ", *string);
+//}
+//
+//int main()
+//{
+//	char* str = "abcde";
+//	reverse_string(str);
+//	return 0;
+//}
+
+
+
+
+//int mystrlen(char* string)//·Çµİ¹é
+//{
+//	int count = 0;
+//	while (*string != '\0')
+//	{
+//		count++;
+//		string++;
+//	}
+//	return count;
+//}
+//
+//int mystrlen(char* string)//µİ¹é
+//{
+//	if (*string != '\0')
+//	{
+//		return 1 + mystrlen(string + 1);
+//	}
+//	else
+//	{
+//		return 0;
+//	}
+//}
+//
+//int main()
+//{
+//	char string[] = "abcde";
+//	printf("%d\n", mystrlen(string));
+//	return 0;
+//}
+
+
+
+
+
+//int fac(int n)//µİ¹é
+//{
+//	if (n <= 1)
+//	{
+//		return 1;
+//	}
+//	else
+//	{
+//		return n * fac(n - 1);
+//	}
+//
+//}
+//
+//int fac(int n)//·Çµİ¹é
+//{
+//	int ret = 1;
+//	int i = 0;
+//	for (i = 1; i <= n; i++)
+//	{
+//		ret = ret * i;
+//	}
+//	return ret;
+//}
+//
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int fac(n);
+//	printf("%d\n", fac(n));
+//	return 0;
+//}
+
+
+
+
+void Print(int n)
+{
+	if (n < 10)
+	{
+		printf("%d ", n);
+	}
+	else
+	{
+		Print(n / 10);
+		printf("%d ", n % 10);
+	}
+}
 
 int main()
 {
+	int n = 0;
+	scanf("%d", &n);
+	Print(n);
 	return 0;
 }
