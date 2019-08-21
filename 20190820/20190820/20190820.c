@@ -59,17 +59,51 @@
 
 
 
+//int main()
+//{
+//	int murder;
+//	for (murder = 'A'; murder <= 'D'; murder++)
+//	{
+//		if (((murder != 'A') + (murder == 'C') + (murder == 'D') + (murder != 'D')) == 3)
+//		{
+//			printf("%c\n", murder);
+//
+//		}
+//
+//	}
+//	return 0;
+//}
+
+
+
+
 int main()
 {
-	int murder;
-	for (murder = 'A'; murder <= 'D'; murder++)
+	int arr[5][5] = { 0 };
+	int i = 0;
+	for (i = 0; i < 5; i++)
 	{
-		if (((murder != 'A') + (murder == 'C') + (murder == 'D') + (murder != 'D')) == 3)
+		int m = 0;
+		for (m = 0; m < 5 - i; m++)
 		{
-			printf("%c\n", murder);
-
+			printf("  ");
 		}
+		int j = 0;
+		for (j = 0; j <= i; j++)
+		{
+			if ((0 == j) || (i == j))
+			{
+				arr[i][j] = 1;
 
+			}
+			else
+			{
+				arr[i][j] = arr[i - 1][j] + arr[i - 1][j - 1];
+
+			}
+			printf("%4d", arr[i][j]);
+		}
+		printf("\n");
 	}
 	return 0;
 }
