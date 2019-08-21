@@ -61,30 +61,30 @@
 
 
 
-//int Pow(int n, int k)
-//{
-//	if (k == 0)
-//	{
-//		return 0;
-//	}
-//	else if (k == 1)
-//	{
-//		return n;
-//	}
-//	else
-//	{
-//		return n * Pow(n, k - 1);
-//	}
-//}
-//
-//int main()
-//{
-//	int n = 0;
-//	int k = 0;
-//	scanf("%d%d", &n, &k);
-//	printf("%d\n",Pow(n, k));
-//	return 0;
-//}
+double Pow(int n, int k)
+{
+	if (k == 0)
+	{
+		return 1;
+	}
+	else if (k >= 1)
+	{
+		return n * Pow(n, k - 1);
+	}
+	else
+	{
+		return 1.0 / Pow(n, -k);
+	}
+}
+
+int main()
+{
+	int n = 0;
+	int k = 0;
+	scanf("%d%d", &n, &k);
+	printf("%lf\n",Pow(n, k));
+	return 0;
+}
 
 
 
@@ -201,23 +201,23 @@
 
 
 
-void Print(int n)
-{
-	if (n < 10)
-	{
-		printf("%d ", n);
-	}
-	else
-	{
-		Print(n / 10);
-		printf("%d ", n % 10);
-	}
-}
-
-int main()
-{
-	int n = 0;
-	scanf("%d", &n);
-	Print(n);
-	return 0;
-}
+//void Print(int n)
+//{
+//	if (n < 10)
+//	{
+//		printf("%d ", n);
+//	}
+//	else
+//	{
+//		Print(n / 10);
+//		printf("%d ", n % 10);
+//	}
+//}
+//
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	Print(n);
+//	return 0;
+//}
