@@ -106,20 +106,25 @@ int my_strlen(const char* str)
 {
 	int count = 0;
 	assert(str != NULL);
+	while (*str++)
+	{
+		count++;
+	}
+	return count;
 
 }
 
 reverse_string(char* left, char* right)
 {
-	assert(lest && right)
-		while (left < right)
-		{
-			char tmp = *left;
-			*left = *right;
-			*right = tmp;
-			left++;
-			right--;
-		}
+	assert(left && right);
+	while (left < right)
+	{
+		char tmp = *left;
+		*left = *right;
+		*right = tmp;
+		left++;
+		right--;
+	}
 }
 
 void reverse(char arr[])
