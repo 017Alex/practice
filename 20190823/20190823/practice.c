@@ -18,30 +18,33 @@
 #include<string.h>
 #include<stdlib.h>
 
-void Move(char *p, int k)
-{
-	int len = strlen(p) - 1;
-	int i = 0;
-	int j = 0;
-	for (i = 0; i < k; i++)
-	{
-		char tmp = p[0];
-		for (j = 0; j < len; j++)
-		{
-			p[j] = p[j + 1];
-		}
-		p[len] = tmp;
-	}
-}
+//void Move(char *p, int k)
+//{
+//	int len = strlen(p) - 1;
+//	int i = 0;
+//	int j = 0;
+//	for (i = 0; i < k; i++)
+//	{
+//		char tmp = p[0];
+//		for (j = 0; j < len; j++)
+//		{
+//			p[j] = p[j + 1];
+//		}
+//		p[len] = tmp;
+//	}
+//}
+//
+//int main()
+//{
+//	char arr[] = "ABCD";
+//	int k = 0;
+//	int sz = strlen(arr) - 1;
+//	printf("%s\n", &arr);
+//	scanf("%d", &k);
+//	Move(arr, k);
+//	printf("%s\n", &arr);
+//	return 0;
+//}
 
-int main()
-{
-	char arr[] = "ABCD";
-	int k = 0;
-	int sz = strlen(arr) - 1;
-	printf("%s\n", &arr);
-	scanf("%d", &k);
-	Move(arr, k);
-	printf("%s\n", &arr);
-	return 0;
-}
+
+
