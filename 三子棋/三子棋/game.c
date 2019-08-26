@@ -130,7 +130,6 @@ char IsWin(char board[ROW][COL], int row, int col)//≈–∂œ ‰”Æ
 			if ((board[i - 1][i - 1] == board[i][i]) && (board[i][i] == board[i + 1][i + 1]) && board[i][j] != ' ')//∂‘Ω«œﬂ
 			{
 				return board[i][j];
-
 			}
 		}
 	}
