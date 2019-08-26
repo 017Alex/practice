@@ -105,7 +105,7 @@ char IsWin(char board[ROW][COL], int row, int col)//≈–∂œ ‰”Æ
 	{
 		for (j = 1; j < col - 1; j++)
 		{
-			if ((board[i][j - 1] == board[i][j]) && (board[i][j] == board[i][j + 1]) && board[i][j] != ' ')
+			if ((board[i][j - 1] == board[i][j]) && (board[i][j] == board[i][j + 1]) && board[i][j] != ' ')//––
 			{
 				return board[i][j];
 			}
@@ -115,7 +115,7 @@ char IsWin(char board[ROW][COL], int row, int col)//≈–∂œ ‰”Æ
 	{
 		for (i = 1; i < row - 1; i++)
 		{
-			if ((board[i - 1][j] == board[i + 1][j]) && (board[i][j] == board[i + 1][j]) && board[i][j] != ' ')
+			if ((board[i - 1][j] == board[i + 1][j]) && (board[i][j] == board[i + 1][j]) && board[i][j] != ' ')//¡–
 			{
 				return board[i][j];
 			}
@@ -126,7 +126,7 @@ char IsWin(char board[ROW][COL], int row, int col)//≈–∂œ ‰”Æ
 	{
 		for (j = 1; j < col - 1; j++)
 		{
-			if ((board[i - 1][i - 1] == board[i][i]) && (board[i][i] == board[i + 1][i + 1]) && board[i][j] != ' ')
+			if ((board[i - 1][i - 1] == board[i][i]) && (board[i][i] == board[i + 1][i + 1]) && board[i][j] != ' ')//∂‘Ω«œﬂ
 			{
 				return board[i][j];
 
@@ -137,7 +137,7 @@ char IsWin(char board[ROW][COL], int row, int col)//≈–∂œ ‰”Æ
 	{
 		for (j = 1; j < col - 1; j++)
 		{
-			if ((board[i + 1][j - 1] == board[i][j]) && (board[i][j] == board[i - 1][j + 1]) && board[i][j] != ' ')
+			if ((board[i + 1][j - 1] == board[i][j]) && (board[i][j] == board[i - 1][j + 1]) && board[i][j] != ' ')//∂‘Ω«œﬂ
 			{
 				return board[i][j];
 			}
@@ -145,7 +145,7 @@ char IsWin(char board[ROW][COL], int row, int col)//≈–∂œ ‰”Æ
 	}
 	if (IsFull(board, row, col) == 1)
 	{
-		return 'Q';
+		return 'Q';//∆Ωæ÷
 	}
 	return 'C';//ºÃ–¯”Œœ∑
 }
