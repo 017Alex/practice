@@ -14,7 +14,7 @@
 char* My_strcpy(char* arr2, const char* arr1)
 {
 	char* ret = arr2;
-	assert(arr2 != NULL && arr1 != NULL);
+	assert(arr2 && arr1);
 	while (*arr2++ = *arr1++)
 	{
 		;
@@ -25,7 +25,7 @@ char* My_strcpy(char* arr2, const char* arr1)
 char* My_strcat(char* arr3, const char* arr1)
 {
 	char* ret = arr3;
-	assert(arr3 != NULL && arr1 != NULL);
+	assert(arr3 && arr1);
 	while (*arr3 != '\0')
 	{
 		arr3++;
