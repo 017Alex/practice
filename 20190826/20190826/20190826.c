@@ -50,13 +50,18 @@ int My_strcmp(const char* str1, const char* str2)
 	return *str1 - *str2;
 }
 
+//int main()
+//{
+//	char arr1[20] = "abcdef";
+//	char arr2[20] = { 0 };
+//	char arr3[20] = "123456";
+//	printf("%s\n", My_strcpy(arr2, arr1));
+//	printf("%s\n", My_strcat(arr3, arr1));
+//	printf("%d\n", My_strcmp("abc", "abcde"));
+//	return 0;
+//}
+
 int main()
 {
-	char arr1[20] = "abcdef";
-	char arr2[20] = { 0 };
-	char arr3[20] = "123456";
-	printf("%s\n", My_strcpy(arr2, arr1));
-	printf("%s\n", My_strcat(arr3, arr1));
-	printf("%d\n", My_strcmp("abc", "abcde"));
 	return 0;
 }
