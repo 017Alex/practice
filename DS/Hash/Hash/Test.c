@@ -49,11 +49,20 @@ bucket_node hash_table[P];
 //insert_new_element()函数目的是把一个新的值插入hash_table中，
 //元素插入成功时，函数返回0，否则返回-1，完成函数。
 
+void Init_bucket_node()
+{
+	for (int i = 0; i < P; i++)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			hash_table[i].data[j] = NULL_DATA;
+		}
+		hash_table[i]
+	}
+}
+
 int insert_new_element(int new_element)
 {
-	int idx = new_element % P;
-	bucket_node* s = (bucket_node*)malloc(sizeof(bucket_node));
-	hash_table
 }
 
 ////////////////////////////////////////////////

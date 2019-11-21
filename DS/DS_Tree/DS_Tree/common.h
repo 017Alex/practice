@@ -7,8 +7,6 @@
 #include<assert.h>
 #include<stdbool.h>
 
-typedef enum { FALSE, TRUE }BOOL;
-
 #define DataType char
 void Swap(DataType* a, DataType* b)
 {
