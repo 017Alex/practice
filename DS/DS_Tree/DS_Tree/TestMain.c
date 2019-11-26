@@ -21,39 +21,18 @@ int main()
 	printf("LRV   :");
 	PostOrder(&bt);
 	printf("\n");
+
+	printf("\n");
+	printf("Level :");
+	LevelOrder(&bt);
+	printf("\n");
 	
 	printf("\n");
 	printf("Size = %d\n", Size(&bt));
 	printf("Hegith = %d\n", Height(&bt));
 	BinTreeNode* p;
-	p = Parent(&bt, 'H');
+	p = Parent(&bt, 'D');
 	printf("parent :%c", p->data);
 
 	return 0;
 }
-
-//#include"queue.h"
-//void LevelOrder(BinTree* t)
-//{
-//	_LevelOrder(t->root);
-//}
-//void _LevelOrder(BinTreeNode* t)
-//{
-//	if (t != NULL)
-//	{
-//		LinkQueue Q;
-//		LinkQueueInit(&Q);
-//
-//		LinkQueueEn(&Q, t);
-//		while (!LinkQueueEmpty(&Q))
-//		{
-//			BinTreeNode* p = LinkQueueFront(&Q);
-//			LinkQueueDe(&Q);
-//			printf("%c ", p->data);
-//			if (p->leftChild != NULL)
-//				LinkQueueEn(&Q, p->leftChild);
-//			if (p->rightChild != NULL)
-//				LinkQueueEn(&Q, p->rightChild);
-//		}
-//	}
-//}

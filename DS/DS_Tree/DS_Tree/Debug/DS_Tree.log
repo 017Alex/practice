@@ -1,2 +1,4 @@
 ﻿  TestMain.c
+C:\Users\10762\Desktop\practice\DS\DS_Tree\DS_Tree\queue.h(59,9): warning C4033: “LinkQueueFront”必须返回值
+C:\Users\10762\Desktop\practice\DS\DS_Tree\DS_Tree\queue.h(62): warning C4715: “LinkQueueFront”: 不是所有的控件路径都返回值
   DS_Tree.vcxproj -> C:\Users\10762\Desktop\practice\DS\DS_Tree\Debug\DS_Tree.exe

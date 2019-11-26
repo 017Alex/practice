@@ -31,6 +31,9 @@ void _InOrder(BinTreeNode* t);
 //后序遍历
 void PostOrder(BinTree* t);
 void _PostOrder(BinTreeNode* t);
+//层次遍历
+void LevelOrder(BinTree* t);
+void _LevelOrder(BinTreeNode* t);
 
 //求节点个数
 size_t _Size(BinTreeNode* t);
@@ -193,6 +196,31 @@ BinTreeNode* _Parent(BinTreeNode* t, DataType key)
 	return _Parent(t->rightChild, key);
 }
 
+#include"queue.h"
+void LevelOrder(BinTree* t)
+{
+	_LevelOrder(t->root);
+}
+void _LevelOrder(BinTreeNode* t)
+{
+	if (t != NULL)
+	{
+		LinkQueue Q;
+		LinkQueueInit(&Q);
+
+		LinkQueueEn(&Q, t);
+		while (!LinkQueueEmpty(&Q))
+		{
+			BinTreeNode* p = LinkQueueFront(&Q);
+			LinkQueueDe(&Q);
+			printf("%c ", p->data);
+			if (p->leftChild != NULL)
+				LinkQueueEn(&Q, p->leftChild);
+			if (p->rightChild != NULL)
+				LinkQueueEn(&Q, p->rightChild);
+		}
+	}
+}
 
 
 
