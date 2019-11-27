@@ -1,6 +1,2 @@
 ﻿  test.cpp
-C:\Users\10762\Desktop\practice\C++\20191121\20191121\test.cpp(5,1): warning C4326: “main”的返回类型应为“int”而非“void”
-C:\Users\10762\Desktop\practice\C++\20191121\20191121\test.cpp(8,16): warning C4305: “初始化”: 从“int”到“char”截断
-C:\Users\10762\Desktop\practice\C++\20191121\20191121\test.cpp(8,11): warning C4309: “初始化”: 截断常量值
-C:\Users\10762\Desktop\practice\C++\20191121\20191121\test.cpp(9,21): warning C4305: “初始化”: 从“double”到“float”截断
   20191121.vcxproj -> C:\Users\10762\Desktop\practice\C++\20191121\Debug\20191121.exe
