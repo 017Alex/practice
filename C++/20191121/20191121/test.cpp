@@ -2,6 +2,70 @@
 #pragma warning(disable:4996)
 using namespace std;
 
+class Int
+{
+	friend ostream& operator<<(ostream& out, const Int& x);
+public:
+	Int(int i = 0) :m_i(i)
+	{}
+	~Int()
+	{}
+public:
+	Int operator+(const Int& x)
+	{
+		return Int(m_i + x.m_i);
+	}
+	Int operator-(const Int& x)
+	{
+		return Int(m_i - x.m_i);
+	}
+	Int operator*(const Int& x)
+	{
+		return Int(m_i * x.m_i);
+	}
+	Int operator/(const Int& x)
+	{
+		return Int(m_i / x.m_i);
+	}
+	Int operator%(const Int& x)
+	{
+		return Int(m_i % x.m_i);
+	}
+public:
+	Int& operator+=(const Int& x);
+	Int& operator-=(const Int& x);
+	Int& operator*=(const Int& x);
+	Int& operator/=(const Int& x);
+	Int& operator%=(const Int& x);
+public:
+	Int operator++();
+	Int operator--();
+private:
+	int m_i;
+};
+
+ostream& operator<<(ostream& out, const Int& x)
+{
+	cout << x.m_i;
+	return out;
+}
+
+void main()
+{
+	Int a(1);
+	Int b(2);
+	Int c;
+	c = a + b;
+	cout << a << endl;
+}
+
+
+
+
+
+
+
+/*
 class Test
 {
 public:
@@ -55,7 +119,7 @@ public:
 	{
 		return m_data
 	}
-	*/
+	*//*
 private:
 	int m_data;
 };
@@ -67,7 +131,7 @@ void main()
 	Test t3;
 	t2 = t1 = t3;
 }
-
+*/
 
 
 

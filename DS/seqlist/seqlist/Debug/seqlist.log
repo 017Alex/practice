@@ -1,0 +1,4 @@
+﻿  test.c
+C:\Users\10762\Desktop\practice\DS\seqlist\seqlist\seplist.h(29,16): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\10762\Desktop\practice\DS\seqlist\seqlist\seplist.h(43,17): warning C4018: “>”: 有符号/无符号不匹配
+  seqlist.vcxproj -> C:\Users\10762\Desktop\practice\DS\seqlist\Debug\seqlist.exe
