@@ -164,11 +164,11 @@ int main()
 		scanf("%c", &n);
 		if (n >= 'a' && n <= 'z')
 		{
-			printf("%c\n", n - 32);
+			printf("%c", n - 32);
 		}
 		else if (n >= 'A' && n <= 'Z')
 		{
-			printf("%c\n", n + 32);
+			printf("%c", n + 32);
 		}
 	}
 	return 0;
