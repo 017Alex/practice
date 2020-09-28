@@ -1,2 +1,3 @@
 ﻿  test.cpp
+C:\Users\10762\Desktop\practice\C++\2020practice\2020practice\test.cpp(38,1): warning C4326: “main”的返回类型应为“int”而非“void”
   2020practice.vcxproj -> C:\Users\10762\Desktop\practice\C++\2020practice\Debug\2020practice.exe

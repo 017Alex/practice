@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 using namespace std;
 
@@ -28,4 +29,18 @@ int main(int argc, char* argv[])
 		cout << "false" << endl;
 	return 0;
 
+}
+*/
+
+#include<stdio.h>
+
+void main()
+{
+	int i = 0;
+	while (i < 10)
+	{
+		if (i < 1) continue;
+		if (i == 5) break;
+		i++;
+	}
 }
